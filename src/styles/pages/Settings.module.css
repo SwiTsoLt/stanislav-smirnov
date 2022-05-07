@@ -1,0 +1,38 @@
+.settings {
+    width: 100%;
+    height: fit-content;
+}
+
+.settingList {
+    width: 100%;
+    height: fit-content;
+    list-style: none;
+}
+
+.setting {
+    background-color: #ffffff;
+    padding: 10px;
+}
+
+.setting_lang {
+    display: grid;
+    grid-template-columns: max-content minmax(50px, 200px);
+    grid-column-gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.lang_list{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+}
+
+.lang_list option:checked {
+    background-color: #8cdbff;
+    color: #ffffff;
+}

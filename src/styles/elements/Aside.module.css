@@ -1,0 +1,39 @@
+aside {
+    position: sticky;
+    width: 150px;
+    height: fit-content;
+    min-height: 350px;
+    background-color: #fff;
+    top: 10px;
+    z-index: 999;
+}
+
+.aside_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.aside_list>li {
+    width: 100%;
+    height: 3em;
+    text-align: center;
+}
+
+.aside_list>li>a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #303030;
+    line-height: 3em;
+    background-color: #ffffff;
+    transition: all .2s ease;
+}
+
+.aside_list>li>a:hover {
+    filter: brightness(0.97);
+    transition: all .2s ease;
+}

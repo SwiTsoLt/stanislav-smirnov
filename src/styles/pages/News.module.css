@@ -1,0 +1,78 @@
+.newsPage {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.post {
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+}
+
+.postTitle {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.postImage{
+    width: 100%;
+}
+
+.postImage > img{
+    width: 100%;
+    height: 100%;
+}
+
+.postImage > img.ready{display: block;}
+
+.postContent {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.post_likeComm {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 10px;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.post_likes, .post_comm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column-gap: 4px;
+    width: fit-content;
+    height: 100%;
+    background-color: #ffffff;
+    filter: brightness(0.94);
+    padding: 0 14px;
+    border-radius: 8px 4px;
+}
+
+.likeBtn, .commBtn {
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.likeBtn {background-image: url('../../images/elements/heart.png');}
+.likeBtn.active {background-image: url('../../images/elements/heartActive.png');}
+.commBtn {background-image: url('../../images/elements/comm.png');}

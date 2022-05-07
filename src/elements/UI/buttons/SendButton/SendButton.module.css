@@ -1,0 +1,33 @@
+.sendBtn {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    background-image: url('../../../../images/elements/send.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    border: 2px solid #EDEEF0;
+    border-radius: 8px 4px;
+    cursor: pointer;
+    transition: all .2s ease;
+    align-self: flex-start;
+}
+
+.sendBtn:hover {
+    border-color: #cccccc;
+    transition: all .2s ease;
+}
+
+.sendEditPostBtn {
+    min-width: 24px;
+    height: 24px;
+    background-color: transparent;
+    background-image: url('../../../../images/elements/send.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: 0;
+    cursor: pointer;
+    transition: all .2s ease;
+    align-self: flex-start;
+}

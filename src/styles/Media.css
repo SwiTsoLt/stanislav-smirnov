@@ -1,0 +1,81 @@
+@media screen and (max-width: 600px) {
+    .wrapper {
+        height: auto;
+        padding: 10px 0 0 0;
+    }
+
+    h1 {
+        font-size: 1.4em;
+    }
+
+    aside.borderRadius {
+        width: calc(100% - 100px);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: calc(-100% + 100px);
+        box-shadow: none;
+        transition: all .4s ease;
+    }
+
+    aside.active {
+        left: 0;
+        transition: all .4s ease;
+    }
+
+    .aside_after {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #ffffff;
+        background-image: url('../images/elements/list.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 70%;
+        border-radius: 0 4px 4px 0;
+        box-shadow: 2px 2px 4px 0 #bcbcbc;
+        top: 10px;
+        right: -40px;
+        transition: all .4s ease;
+    }
+
+    aside.active>.aside_after {
+        width: 50px;
+        height: 50px;
+        top: 0;
+        right: -50px;
+        background-image: url('../images/elements/cross.png');
+        transition: all .4s ease;
+    }
+
+    div.search {
+        width: calc(100% - 50px);
+        justify-self: flex-end;
+    }
+
+    div.Comments_comments__ogXtQ {
+        min-height: calc(100vh - 60px);
+    }
+
+    div.Comments_commentForm__fIlMX>textarea {
+        font-size: 1.4em;
+    }
+
+    div.Comments_commentForm__fIlMX {
+        position: fixed;
+        bottom: 0;
+    }
+
+    div.Profile_profilePage__nqsom {
+        padding: 0 10px;
+    }
+
+    div.borderRadius CreatePostForm_createPostForm__RLcHm {
+        min-width: 100%;
+    }
+
+    div.CreatePostForm_createPostForm_inner__9TxnE {
+        min-width: 100%;
+        max-width: none;
+    }
+}

@@ -1,0 +1,28 @@
+.adminPanel {
+    display: grid;
+    grid-row-gap: 10px;
+    width: 100%;
+    height: fit-content;
+    min-height: 300px;
+}
+
+.adminPanelTitle {
+    background-color: #fff;
+    padding: 10px;
+}
+
+/* NO ACCESS */
+
+.noAccess {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px;
+}
+
+.noAccess > h1 {
+    color: crimson;
+    line-height: 2em;
+}

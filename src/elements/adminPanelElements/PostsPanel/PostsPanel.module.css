@@ -1,0 +1,115 @@
+.postsPanel {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.center {
+    width: 100%;
+    line-height: 2em;
+    text-align: center;
+}
+
+.postsPanel::-webkit-scrollbar { width: 0; }
+
+.postsList{
+    display: flex;
+    grid-column-gap: 10px;
+    width: fit-content;
+    min-width: 100%;
+}
+
+.postsPanel > h2 {  
+    position: sticky;
+    left: 0;
+    line-height: 2.4em;
+}
+
+.postCommentsList {
+    display: grid;
+    grid-row-gap: 10px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.postComment {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.postCommentUserName {
+    width: 100%;
+    text-align: left;
+    color: dodgerblue;
+}
+
+.postCommentText {
+    width: 100%;
+    text-align: left;
+}
+
+.deleteButtonOuter {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+}
+
+.deleteButton {
+    width: 5em;
+    height: 1.6em;
+    border: 2px solid #c6282859;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    border-color: #c62828a2;
+    transition: all .2s ease;
+}
+
+.inputPanel {
+    position: sticky;
+    display: none;
+    flex-direction: column;
+    grid-row-gap: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.inputPanel.active {display: flex;}
+
+.nextPosts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: inherit;
+}
+
+.prevPostsButton, .nextPostsButton {
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 0.7;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nextPostsButton {background-image: url("../../../images/elements/next_button.png");}
+.prevPostsButton {background-image: url("../../../images/elements/prev_button.png");}

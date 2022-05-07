@@ -1,0 +1,28 @@
+.inputForm {
+    display: flex;
+    grid-column-gap: 10px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.inputForm textarea {
+    width: 100%;
+    height: 2.4em;
+    min-height: 34px;
+    max-height: 300px;
+    border: 2px solid #EDEEF0;
+    border-radius: 4px;
+    outline: none;
+    transition: all .2s ease;
+    font-size: 1.2em;
+    resize: none;
+    padding: 0.5em 1em;
+    overflow-y: hidden;
+}
+
+.inputForm textarea:hover,
+.inputForm textarea:focus{border-color: #cccccc;}

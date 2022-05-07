@@ -1,0 +1,50 @@
+.generalInformationPanel {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
+}
+
+.generalInformationPanel > h2 {  
+    position: sticky;
+    left: 0;
+    line-height: 2.4em;
+}
+
+.generalInformationTableOuter {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+}
+
+.generalInformationTable {
+    display: grid;
+    width: 100%;
+    height: fit-content;
+    border: 2px solid #EDEEF0;
+    border-radius: 4px;
+    border-spacing: 0;
+}
+
+.generalInformationTable tr {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 100%;
+}
+.generalInformationTable td {
+    text-align: left;
+    border-right: 2px solid #EDEEF0;
+    border-bottom: 2px solid #EDEEF0;
+    padding: 10px;
+}
+.generalInformationTable th {
+    text-align: right;
+    border-bottom: 2px solid #EDEEF0;
+    padding: 10px;
+}
+
+.generalInformationTable tr:last-child > th,
+.generalInformationTable tr:last-child > td {
+    border-bottom: 0;
+}

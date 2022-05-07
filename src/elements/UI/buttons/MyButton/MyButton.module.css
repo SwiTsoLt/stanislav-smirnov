@@ -1,0 +1,56 @@
+.myButton {
+    min-width: 24px;
+    height: 24px;
+    border: 2px solid #EDEEF0;
+    text-align: center;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.myButton.agree {
+    border-color: #00c45263;
+}
+
+.myButton.warning {
+    border-color: #ffff0060
+}
+
+.myButton.cancellation {
+    border-color: #c6282859;
+}
+
+
+.myButton.cancellation-image {
+    background-image: url('../../../../images/elements/cross.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+}
+
+.hideFormBtn {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../../images/elements/cross.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    transition: all .2s ease;
+}
+
+.showFormBtn {
+    width: 30px;
+    height: 30px;
+    background-image: url('../../../../images/elements/plus.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    transition: all .2s ease;
+}
+
+.showFormBtn:hover, .hideFormBtn:hover {
+    transform: scale(0.9);
+}
